@@ -157,7 +157,6 @@ function createRepo(callback) {
         if (err) {
           return callback(err);
         }
-        console.log(JSON.stringify(res));
         return callback(null, res.data.ssh_url);
       }
     );
